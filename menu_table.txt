@@ -1,0 +1,13 @@
+create table MENU_SE
+(
+  MENU_ID        NUMBER(3) not null,
+  MENU_NAME      VARCHAR2(100),
+  PARENT_MENU_ID NUMBER(3),
+  ACTIVE_YN      CHAR(1),
+  SEQ_NO         NUMBER(3)
+);
+
+
+alter table MENU_SE
+add constraint MENU_SE_MENU_ID_PK 
+primary key (MENU_ID);
